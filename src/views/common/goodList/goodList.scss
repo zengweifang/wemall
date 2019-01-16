@@ -1,0 +1,123 @@
+.goods-list{
+	width:100%;
+	background-color:$app-background;
+	overflow:hidden;
+	color:$font-color;
+	li{
+
+		width:50%;
+		float:left;
+		padding:0.133333rem 0.133333rem 0.133333rem 0;
+		height: 7.266667rem;
+		min-height: 240px;
+		.content{
+			background-color:$white;
+			overflow: hidden;
+			width:100%;
+			height: 100%;
+		}
+		.img-area{
+
+			width:100%;
+			// height: 4.8rem;
+			height: 67%;
+			position:relative;
+			overflow: hidden;
+			.tags{
+				position:absolute;
+				top:0;
+				left:0;				
+			}
+			.tag{
+				width:28px;
+				height:16px;
+				font-size:10px;
+				line-height: 10px;
+				color:$white;
+				@include box-position(center,center);
+			}
+			.img{
+				width:100%;
+				height:100%;
+				background-size:contain;
+			}
+			img{
+				width:100%;
+				height: 100%;
+			}
+			.new{
+				background:url('../../../assets/imgs/tab_new-@2x.png')	no-repeat;
+				background-size:contain;
+			}
+			.own{
+				background:url('../../../assets/imgs/tab_self-support@2x.png')	no-repeat;
+				background-size:contain;
+			}
+			.status{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				//opacity: 0.5;
+			}
+		}
+		.invalid{
+			background:url('../../../assets/imgs/status_invalid-@3x.png') no-repeat center center;
+			background-size:80%;
+		}
+		.sold-out{
+			background:url('../../../assets/imgs/status_sold-out@3x.png') no-repeat center center;
+			background-size:80%;
+		}
+		.status-shelf{
+			background:url('../../../assets/imgs/status_shelf-@3x.png')	no-repeat center center;
+			background-size:80%;
+		}
+		.info{
+			padding:0.28rem 0.2rem;
+			p:first-child{
+				line-height: 18px;
+				min-height: 36px;
+				overflow: hidden;
+				word-break: break-all;
+				text-overflow:ellipsis;
+				-webkit-line-clamp:2;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+			}
+			p:last-child{
+				margin-top: 5px;
+			}
+			p{
+				font-size:14px;
+			}
+		}
+	}
+	li:nth-child(even){
+		padding:0.133333rem 0 0.133333rem 0.133333rem;
+	}
+	.price{
+		color:$primary-color;
+		font-size:16px;
+	}
+	.del-price{
+		color:$lighter-font-color;
+		text-decoration: line-through;
+		font-size:12px;
+		margin-left:5px;
+	}
+}
+.for-index{
+	// background-color:#fff;
+
+	li{
+		border-bottom:1px solid $app-background;
+		border-right:1px solid $app-background;
+		padding:0.32rem 0.32rem 0.04rem;
+		background-color:#fff;
+	}
+	li:nth-child(even){
+		padding:0.32rem 0.32rem 0.04rem;
+	}
+}

@@ -1,0 +1,118 @@
+.user-feedback{
+	height:100%;
+	width:100%;
+	background-color:$app-background;
+	.content{
+		.text-area{
+			h1{
+				padding:0 0.32rem;
+				line-height: 1.106667rem;
+				font-size: 14px;
+			}
+			textarea{
+				width:100%;
+				border:none;
+				height:3.346667rem;
+				display: inline-block;
+				font-size: 14px;
+				padding:0.32rem;
+			}
+		}
+		.img-upload{
+			input[type="file"]{
+				opacity: 0;
+				width:0;
+				height: 0;
+			}
+			h1{
+				padding:0 0.32rem;
+				line-height: 1.106667rem;
+				font-size: 14px;
+			}
+			.upload-area{	
+				overflow: hidden;		
+				background-color: #fff;
+				padding:0.32rem;
+				.upload{
+					width:100%;
+					// overflow: hidden;
+						// width:100%;
+						.single-img{
+							float:left;
+							margin-right:12px;
+							width:2.213333rem;
+							height:2.213333rem;
+							position:relative;
+							
+							i{
+								font-style: normal;
+								font-size: 20px;
+								background-color:red;
+								border-radius:50%;
+								width:20px;
+								height: 20px;
+								line-height: 20px;
+								text-align:center;
+								display:inline-block;
+								color:#fff;
+								font-weight: 600;
+								position:absolute;
+								right:-8px;
+								top:-8px;
+
+							}
+							img{
+								width:100%;
+								height: 100%;
+							}
+						}
+					
+					.add{
+						width:2.213333rem;
+						height:2.213333rem;
+						border:1px solid $lighter-border-color;
+						text-align:center;
+						line-height: 2.213333rem;
+						border-radius:3px;
+						position:relative;
+						display:block;
+						float:left;
+						
+						input{
+							width:100%;
+							height:100%;
+							display:block;
+							position:absolute;
+							top:0;
+							left:0;
+							opacity: 0;
+						}
+						.icon-add1{
+							font-size: 24px;
+							color:#959595;
+						}
+					}
+
+				}			
+				p{
+					width:100%;
+					margin-top: 0.2rem;
+					word-break:break-all;
+				}
+			}
+		}
+	}
+	.submit-button{
+		width:100%;
+		height:1.226667rem;
+		border:none;
+		color:#fff;
+		background-color:$primary-color;
+		position: fixed;
+		bottom:0;
+		font-size: 14px;
+	}
+	.dis{
+		background-color:#959595;
+	}
+}

@@ -1,0 +1,54 @@
+.pay-callback{
+	.status{
+		width: 100%;
+		height: 2.666667rem;
+		line-height: 2.666667rem;
+		text-align: center;
+		color: #fff;
+		font-size: 16px;
+
+		img{
+			width:56px;
+			margin-right: 15px;
+			vertical-align: middle;
+		}
+	}
+	.success{
+		background: rgb(149, 192, 62);
+		@include prefix(background, linear-gradient(90deg, rgb(149, 192, 62) 20%, rgb(184, 215, 62) 80%));
+	}
+	.waiting{
+		background: rgb(255, 88, 88);
+		@include prefix(background,linear-gradient(90deg, rgb(255, 88, 88) 20%, rgb(255, 143, 88) 80%));		
+	}
+	.fail{
+		background: rgb(176, 176, 176);
+		@include prefix(background,linear-gradient(90deg, rgb(176, 176, 176) 20%, rgb(203, 203, 203) 80%));
+	}
+	.tip{
+		text-align: center;
+		margin: 15px 0;
+		padding:0 20px;
+		font-size: 14px;
+	}
+	.action{
+		text-align: center;
+
+		button{
+			width: 93px;
+		    height: 36px;
+		    background-color: #fff;
+		    border: none;
+		    font-size: 14px;
+		    margin: 0 14px;
+		}
+		.grey{
+			color: #959595;
+			border: 1px solid #959595;
+		}
+		.primary{
+			color: #ff5858;
+    		border: 1px solid #ff5858;
+		}
+	}
+}

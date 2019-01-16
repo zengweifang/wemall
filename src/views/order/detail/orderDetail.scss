@@ -1,0 +1,303 @@
+.mint-msgbox-btn{
+  font-size: 16px;
+}
+.order-detail{
+  padding-bottom:1.76rem;
+  min-height: 100%;
+  background-color:#f1f1f1;
+  .clear{
+	clear:both;
+  }
+  .cancel{
+    background: rgb(176, 176, 176);
+    @include prefix(background,linear-gradient(90deg, rgb(176, 176, 176) 20%, rgb(203, 203, 203) 80%));
+  }
+  .paynow{
+    background: rgb(255, 88, 88);
+    @include prefix(background,linear-gradient(90deg, rgb(255, 88, 88) 20%, rgb(255, 143, 88) 80%));
+  }
+  .waiting{
+    background: rgb(255, 178, 77);
+    @include prefix(background,linear-gradient(120deg, rgb(255, 178, 77) 20%, rgb(255, 212, 79) 80%));
+  }
+  .success{
+    background: rgb(149, 192, 62);
+    @include prefix(background, linear-gradient(90deg, rgb(149, 192, 62) 20%, rgb(184, 215, 62) 80%));
+  }
+  .status{
+    text-align: center;
+    height:2.666667rem;
+    line-height: 2.666667rem;
+    color:$primary-color;
+    overflow: hidden;
+    display: flex;
+    @include prefix(align-items,center);
+    .status-icon{
+      margin-right: 0.533333rem;
+      font-size: 0;
+      width: 1.6rem;
+      height:1.6rem;
+      background-size: 1.6rem 1.6rem;
+      background-repeat: none;
+    }
+    .status-cancel{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_cancel@2x.png");
+      [data-dpr="1"] & {
+        background-image: url("../../../assets/imgs/icon_cancel@3x.png");
+      }
+    }
+    .status-pay{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_wait_delivery-@3x.png");
+    }
+    .status-wait-list{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_wait_list@3x.png");
+    }
+    .status-deliver{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_distribution-@3x.png");
+    }
+    .status-ok{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_end@3x.png");
+    }
+    .status-wait{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_obligation-@3x.png");
+    }
+    .status-wait-server{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_wait_service@3x.png");
+    }
+    .status-servering{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_service@3x.png");
+    }
+    .status-wait-confirm{
+      margin-left: 2.4rem;
+      background-image: url("../../../assets/imgs/icon_wait_confirms@3x.png");
+    }
+    .status-msg{
+      line-height: 1;
+      color: #fff;
+      text-align: left;
+	    margin-right: 20px;
+      .status-name{
+        margin-bottom: 0.2rem;
+        font-size: 16px;
+      }
+	  .status-tip{
+		    margin-bottom: 4px;
+	  }
+      .status-pay-msg{
+        font-size: 12px;
+        line-height: 1.4;
+        .status-lefttime span{
+          font-weight: 700;
+        }
+      }
+    }
+
+    img{
+      width:0.64rem;
+      display: inline-block;
+      margin:0 0.2rem -0.106667rem 0;
+    }
+    /*span{
+      @include font-dpr(18px)
+    }*/
+  }
+  .cancel{
+    color:$grey-color;
+  }
+  section{
+    background-color: $white;
+    //padding:0 0.32rem;
+    /*margin-top:0.32rem;*/
+  }
+  section:first-of-type{
+    margin-top: 0;
+  }
+  .address{
+    padding:0.32rem;
+    overflow: hidden;
+    font-size: 0.373333rem;
+    .img{
+      float:left;
+      width:1.146667rem;
+      padding:0.533333rem 0.266667rem;
+      img{
+        width:0.48rem;
+        height:0.48rem;
+        display: block;
+      }
+    }
+    .info{
+      float:left;
+      width:8.213333rem;
+
+      p{
+        padding:0.133333rem;
+        line-height:0.533333rem;
+      }
+    }
+  }
+  .remark{
+    	display: flex;
+    	@include prefix(align-items,center);
+    	min-height:0.933333rem;
+    	padding-left:0.32rem;
+    	border-top: 1px solid $lighter-border-color;
+      padding-top:0.24rem;
+      padding-bottom:0.32rem;
+    	.remark-title{
+    	  color: #959595;
+    	}
+  }
+  .goods-list-detail{
+    border-top:0.32rem solid #f1f1f1;
+	.shop-wrapper{
+	  padding:0 0.32rem;
+	  border-bottom:0.32rem solid #f1f1f1;
+	}
+    .header{
+      img{
+        width:0.48rem;
+        height:0.48rem;
+        margin-right:0.266667rem;
+        margin-bottom:-0.133333rem;
+      }
+      height:0.986667rem;
+      line-height:0.986667rem;
+      @include font-dpr(14px);
+      border-bottom:1px solid $lighter-border-color;
+  	  overflow: hidden;
+  	  text-overflow: ellipsis;
+  	  white-space: nowrap;
+    }
+    .content{
+      .goods{
+		    width:100%;
+        padding:0.4rem 0;
+        overflow: hidden;
+		    border-bottom: 1px solid $lighter-border-color;
+        div{
+          float:left;
+        }
+        .img{
+		      position: relative;
+          margin-right: 0.4rem;
+          overflow: hidden;
+          width:1.64rem;
+          height: 1.64rem;
+          img{
+              width:100%;
+              height: 100%;
+          }
+		  img:after {
+			content:'';
+			background: url('../../../assets/imgs/default@3x.png') no-repeat;
+			background-size: 1.64rem 1.64rem;
+			display: block;
+			position: absolute;
+			// 底下幾行是故意要滿版並且背景填滿擋住底下那個很醜的加載失敗圖片(包子)
+			z-index: 2;
+			top: 0;
+			left: 0;
+			width: 1.64rem;
+			height: 1.64rem;
+			background-color: #fff;
+			background-size: 1.64rem 1.64rem;
+		  }
+        }
+        .title{
+          width:5.506667rem;
+          font-size: 0.373333rem;
+    		  overflow:hidden;
+    		  text-overflow:ellipsis;
+    		  display:-webkit-box;
+    		  -webkit-box-orient:vertical;
+    		  -webkit-line-clamp:2;
+		}
+        .price{
+          float:right;
+          text-align: right;
+          p{
+            @include font-dpr(14px)
+          }
+          p:last-child{
+            color:$grey-color;
+            @include font-dpr(12px)
+          }
+        }
+		.attribute{
+		  margin-top:0.266667rem;
+		  color: #959595;
+		  line-height: 0.666667rem;
+		}
+      }
+	  .goods:nth-last-child(1){
+		border-bottom: 0;
+	  }
+    }
+  }
+  .order-info{
+	 border-bottom: 0.32rem solid #f1f1f1;
+    padding:10px 0.32rem;
+    color:$grey-color;
+    p{
+      line-height:0.666667rem;
+    }
+  }
+  .finacial-info{
+    padding:0.32rem;
+    @include font-dpr(14px);
+    p{
+      line-height:0.666667rem;
+      span{
+        float:right;
+        display: inline-block;
+      }
+    }
+    .real-pay{
+      border-top:1px solid $lighter-border-color;
+      padding-top:0.32rem;
+      text-align: right;
+      margin-top: 0.266667rem;
+      span{
+        color:$primary-color;
+        margin-left: 0.266667rem;
+      }
+    }
+  }
+  .footer-btn{
+    background-color:$background-color;
+    position:fixed;
+    height:1.493333rem;
+    bottom:0;
+    width:100%;
+    padding:0.266667rem 0.32rem;
+    text-align: right;
+    border-top:1px solid #ddd;
+    button{
+      font-size: 0.373333rem;
+      float:right;
+      margin-left:0.32rem;
+    }
+    .bigger{
+      padding:0.2rem 0.387rem 0.2rem;
+    }
+    .btn-primary {
+      color: #fff;
+      background-color: #ff5858;
+      border: 1px solid #ff5858;
+    }
+    .btn-secondary {
+      color: $grey-color;
+      background-color: $white;
+      border: 1px solid $grey-color;
+    }
+  }
+}

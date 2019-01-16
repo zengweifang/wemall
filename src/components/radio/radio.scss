@@ -1,0 +1,62 @@
+.st-radio{
+	overflow:hidden;
+	.single-radio{
+		float:left;
+		height: 18px;
+		line-height: 18px;
+		margin-right: 0.533333rem;
+		span{
+			display: inline-block;
+			float:left;
+		}
+		.radia-core{
+			position:relative;
+			display: inline-block;
+		    width: 18px;
+		    height: 18px;
+		    line-height: 16px;		
+		    text-align: center;
+		    overflow: hidden;
+		    margin-right: 10px;
+			input{
+				border:1px solid #eee;
+				background-color: #fff;
+				font-size: 0;
+				width: 18px;
+			    height: 18px;
+			    opacity: 0
+			}
+
+			.circle{
+				// box-sizing: content-box;
+			    display: inline-block;
+			    background-color: #fff;
+			    border-radius: 100%;
+			    border: 1px solid #ccc;
+			    position: absolute;
+			    width: 18px;
+			    height: 18px;
+			    vertical-align: middle;
+			    left:0;
+			    top:0;
+				i{
+					border-radius:100%;
+					font-size: 11px;
+					display: inline-block;
+					width:18px;
+					height: 18px;
+					position:absolute;
+					left:0;
+					top:1px;
+					font-style:normal;
+					color:#fff;
+				}
+			}
+			.active{
+				background-color: #ff5858 !important;
+				color:#fff !important;
+				border:none;
+			}
+		}
+	}
+}

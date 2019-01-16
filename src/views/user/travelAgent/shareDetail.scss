@@ -1,0 +1,79 @@
+.travel-share-deatil {
+    min-height: 100%;
+    background-color: #424344;
+    position: relative;
+    .share-tips {
+        position: absolute;
+        right: .266667rem;
+    }
+    .container {
+        padding: 1.333333rem .72rem .266667rem .72rem;
+        .content {
+            background-color: #fff;
+            box-shadow: 2px 2px 12px rgba(125, 124, 128, 0.5);
+            border-radius: 4px;
+            overflow: hidden;
+            .img-box {
+                height: 8.933333rem;
+                overflow: hidden;
+                text-align: center;
+                background-color: #ccc;
+                img {
+                    height: 100%;
+                }
+            }
+            .good-name {
+                font-size: 14px;
+                padding: .266667rem .266667rem .08rem .266667rem;
+            }
+            .price-section {
+                padding: 0 .266667rem .133333rem .266667rem;
+                .price {
+                    font-size: 14px;
+                    color: #ff5858;
+                }
+                .org-price {
+                    font-size: 12px;
+                    color: #ccc;
+                    text-decoration: line-through;
+                }
+            }
+            .bottom {
+                border-top: .133333rem solid #e5e5e5;
+                height: 3.6rem;
+                padding: .373333rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo {
+                    img {
+                        
+                    }
+                }
+                .qr {
+                    display: flex;
+                    align-items: center;
+                    .tips {
+                        width: 1.5em;
+                        margin-right: .106667rem;
+                        line-height: 15px;
+                    }
+                    .qrcode-box {
+                        border: .053333rem solid #ccc;
+                        padding: .053333rem;
+                        .inner-box {
+                            border: .026667rem solid #ccc;
+                            width: 2.853333rem;
+                            height: 2.853333rem;
+                            background-color: #ccc;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+  }
+}

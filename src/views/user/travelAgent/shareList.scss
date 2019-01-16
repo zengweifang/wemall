@@ -1,0 +1,86 @@
+.travel-list {
+    background-color: #e8e8e8;
+    min-height: 100%;
+    .top {
+        margin-top: .533333rem;
+        background-color: #e8e8e8;
+        text-align: center;
+        font-size: 14px;
+        .tips {
+            margin-top: .346667rem;
+            color: #333;
+        }
+        .pick-tips {
+            margin-top: .133333rem;
+            color: #333;
+        }
+    }
+    .list {
+        margin-top: .533333rem;
+        background-color: #e8e8e8;
+        .empty-tips {
+            text-align: center;
+        }
+        .good-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 .266667rem;
+            .item {
+                margin: .133333rem 0;
+                background-color: #fff;
+                width: 48.8%;
+                padding-bottom: .266667rem;
+                box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                overflow: hidden;
+                .img-box {
+                    width: 100%;
+                    height: 4.8rem;
+                    line-height: 4rem;
+                    overflow: hidden;
+                    text-align: center;
+                    background-color: #ccc;
+                    img {
+                        vertical-align: middle;
+                        height: 100%;
+                    }
+                }
+                .item-name {
+                    margin-top: .213333rem;
+                    padding: 0 .133333rem;
+                    font-size: 14px;
+                    max-height: .666667rem;
+                    white-space:nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .item-bottom {
+                    padding: .133333rem;
+                    .price {
+                        font-size: 15px;
+                        color: #ff5858;
+                    }
+                    .original-price {
+                        margin-left: .08rem;
+                        font-size: 12px;
+                        color: #ccc;
+                        text-decoration:line-through;
+                    }
+                    .share-btn {
+                        float: right;
+                        font-size: 12px;
+                        background-color: #ff5858;
+                        border-radius: 4px;
+                        color: #fff;
+                        border: 0;
+                        padding: .106667rem .213333rem;
+                    }
+                }
+            }
+        }
+        .load-tip {
+            text-align: center;
+        }
+    }
+}

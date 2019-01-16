@@ -1,0 +1,101 @@
+
+//常用颜色变量
+$font-color:#333;
+$light-font-color:#646464;
+$lighter-font-color:#959595;
+$more-lighter-font-color:#BFBFBF;
+$primary-color:#FF5858;
+$disable-color:#acacac;
+$white:#fff;
+$border-color:#c8cacb;
+$lighter-border-color:#dcdcdc;
+$darker-white:#FEFEFE;
+$background-color:#f1f1f1;
+$darker-border-color:#ddd;
+$app-background:#f0f0f0;
+$section-border-color:#eaeaea;
+$disable-color:#959595;
+$disable-button-color:#959595;
+$disable-button-text-color:#f8f8f8;
+
+$cancel-color:#bfbfbf;
+$orange-color:#ffb24d;
+$green-color:#95c13e;
+$grey-color:#959595;
+
+$coupon-color:#ffc155;
+$coupon-dashed-color:#a0a0a0;
+
+@mixin prefix($property, $value){
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+@mixin nexfix($property, $value){
+    $property:-webkit-#{$value};
+    $property:-moz-#{$value};
+    $property:-o-#{$value};
+    $property:#{$value};
+}
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+/*定义字体大小*/
+@mixin font-dpr($font-size){
+    font-size: $font-size;
+
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
+@mixin box-ver-center(){
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    /* box-align */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -o-box-align: center;
+    box-align: center;
+
+}
+@mixin box-position($level,$ver){
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    /* box-pack */
+    -webkit-box-pack: $level;
+    -moz-box-pack: $level;
+    -ms-flex-pack: $level;
+    -o-box-pack: $level;
+    box-pack: $level;
+
+    /* box-align */
+    -webkit-box-align: $ver;
+    -moz-box-align: $ver;
+    -ms-flex-align: $ver;
+    -o-box-align: $ver;
+    box-align: $ver;
+}

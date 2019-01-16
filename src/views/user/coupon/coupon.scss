@@ -1,0 +1,215 @@
+.user-coupon-list{
+	height: 100%;
+	width:100%;	
+
+	.content{
+		padding-top: 44px;
+		min-height: 100%;
+		width:100%;
+		background-color:$app-background;
+
+		ul{
+			li{
+				// margin-bottom: 0.493333rem;
+				// position:relative;
+				color:#646464;
+				overflow: hidden;
+			    .coupon{
+					background-color:#fff;
+					border-radius:5px;
+					font-size: 12px;
+					line-height: 24px;
+					padding:0 0.32rem;
+					border:1px solid $lighter-border-color;
+					border-top:4px solid #ffc155;
+					position:relative;
+					margin:0.32rem 0.32rem 0;
+					.main{				
+						background:url('../../../assets/imgs/quan@2x.png') no-repeat 0% 5%;
+						background-size:auto 75%;
+					}
+					.info{
+						height:1.813333rem;
+						.reduce-price{
+							color:#ffc155;
+							font-size:16px;
+
+							padding-right:0.32rem;
+							@include box-position(center,center);
+							width:32%;
+							height:100%;
+							float:left;
+							border-right:1px dashed $lighter-border-color;
+							span{
+								font-size:32px;
+								line-height:32px;
+							}
+						}
+						.disabled{
+							color:#959595;
+						}
+						.info-disabled{
+							background:url('../../../assets/imgs/sign_out@2x.png') no-repeat 40% 50%;
+							background-size:auto 80%;
+						}
+						.detail{
+							float:right;
+							width:68%;
+							padding:0.16rem 0 0 0.32rem;
+
+							h1{
+								color:#ffc155;
+								font-size: 14px;
+							}
+							.action{
+								p{
+									width:65%;
+									color:#000;
+									
+									float:left;
+								}
+								button{
+									float:right;
+									width:35%;
+									border:none;
+									background-color:#ffc155;
+									color:#fff;
+									font-size:12px;
+									line-height: 24px;
+								}
+								.disabled{
+									background-color:#959595;
+									color:#fff;
+								}
+							}
+						}
+					}
+					.divide{
+						width:100%;
+						height:0.5rem;
+						position:absolute;
+						top:1.64rem;
+						left:0;
+						padding:0 0.32rem;
+						hr{
+							height: 1px;
+							border:none;
+							border-bottom:1px dashed $lighter-border-color;
+							margin-top: 0.2rem;
+						}
+						span{
+							background-color:$app-background;
+							display: inline-block;
+							width:0.4rem;
+							height:0.4rem;
+							border-radius:50%;
+							// margin-left:-0.57rem;
+							z-index:200;
+							position:absolute;
+							border:none;
+							border-right:1px solid $lighter-border-color;
+							top:0;
+							left:-0.2rem;
+						}
+						span:last-child{
+							border-radius:50% ;
+							left:auto;	
+							right:-0.2rem;
+							top:0;
+							border:none;
+							border-left:1px solid $lighter-border-color;
+						}
+					}
+					.time{
+						// margin-top: 0.25rem;
+						height:0.9rem;
+						line-height: 0.9rem;
+						white-space: nowrap;
+
+						i{
+							margin-right:0.32rem;
+							font-size: 10px;
+							color:#959595;
+						}
+					}	
+					.more{
+						border-top:1px dashed $lighter-border-color;
+						padding:0.16rem 0;
+						line-height:24px;
+					}	
+			    }			
+				.coupon-blue{
+					border-top:4px solid #13b5b1;
+					.info{
+						.reduce-price{
+							color:#13b5b1;
+						}
+						.detail{
+							h1{
+								color:#13b5b1;
+							}
+							.action{
+								button{
+									background-color: #13b5b1;
+								}
+							}
+						}	
+					}	
+				}
+				.coupon-disabled{
+					border-top:4px solid #bfbfbf;
+					color:#bfbfbf;
+					.info{
+						.reduce-price{
+							color:#bfbfbf;
+						}
+						.detail{
+							h1{
+								color:#bfbfbf;
+							}
+							.action{
+								p{
+									color:#bfbfbf;
+								}							
+								button{
+									background-color: #bfbfbf;
+								}
+							}
+						}	
+					}				
+				}	
+			}
+		}
+	}
+	.icon-del{
+		font-size: 18px;
+	}
+	.mint-header.is-fixed{
+		z-index: 201;
+	}
+	.mint-navbar.is-fixed{
+		top:44px;
+		border-bottom: 1px solid $lighter-border-color;
+		z-index:201;
+	}
+	.mint-cell{
+		background:none;
+		border:none;
+		.mint-cell-wrapper{
+			padding:0;
+		}
+		.mint-cell-swipe-buttongroup{
+		    @include box-ver-center();
+		    padding-right:0.32rem;
+		}
+	}
+	.mint-tab-container{
+		padding-top:49px;
+	}
+	.load-tip{
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		color:#646464;
+	}
+}

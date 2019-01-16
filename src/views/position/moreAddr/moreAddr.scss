@@ -1,0 +1,156 @@
+.more-address{
+	height:100%;
+	position:relative;
+	.search{
+		padding:0.2rem 0.32rem 0.16rem;
+		height:6.3%;
+		min-height: 1rem;
+		position:relative;
+		.back-icon{
+			position:absolute;
+			top:0;
+			left:0.3rem;
+			height:100%;
+			@include box-ver-center()
+		}
+		i{
+			display: inline-block;
+		}
+		.bar{
+			height:100%;
+			width:100%;
+			padding-left:0.5rem;
+		}
+	}
+	.active-search{
+		z-index:50;
+		width:100%;
+		position:absolute;
+		float:left;
+		top:0;
+		left:0;
+		height:1rem !important;
+		padding:0.16rem 0.32rem 0.16rem;
+		margin-bottom: 0.16rem;
+		background-color:#fff;
+	}
+	.no-start{			
+		background-color: #000;
+		opacity: 0.2;
+	}
+	.result{
+		position:absolute;
+		z-index: 49;
+		padding-top:1.1rem;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		overflow: auto;
+		.error{
+			width:100%;
+			height:100%;
+			background-color:$white;
+			text-align: center;
+			overflow: hidden;
+			img{
+				display: block;
+				width:40%;
+				margin:30% auto 0;
+			}
+			p{
+				margin-top:0.4rem;
+				font-size:14px;
+			}
+			p:last-child{
+				margin-top: 0.2rem;
+				color:$lighter-font-color;
+			}
+		}
+		ul{
+			background-color:$white;
+			opacity: 1;
+			li{
+				padding:0.2rem 0.48rem;
+				font-size:14px;
+				border-bottom: 1px solid $lighter-border-color;
+				line-height: 20px;
+				p:last-child{
+					font-size: 12px;
+					color:$lighter-font-color;
+				}
+			}
+		}
+	}	
+	.amap-container{
+		height:36%;
+		min-height: 3.2rem;
+	}
+	.hidden-map{
+		width:0;
+		height:0;
+	}
+	.no-addr{
+		height:57.7%;
+		text-align: center;
+		overflow: hidden;
+		p{
+			margin:auto;
+			display: block;
+			font-size: 14px;
+			color:$lighter-font-color;
+			height: 100%;
+			transform: translate3d(0,50%,0);
+			margin-top: -20px;
+		}
+	}	
+	.list{
+		height:57.7%;
+		min-height: 5.12rem;
+		overflow: auto;
+		padding:0 0.32rem 0 0.853333rem;
+
+		li{
+			padding:0.293333rem 0;
+			border-bottom: 1px solid $lighter-border-color;
+			line-height: 24px;
+			p:first-child{
+				font-size: 16px;
+				span{
+					color:$primary-color;
+					position:relative;
+					i{
+						position:absolute;
+						top:0.1rem;
+						left:-0.546667rem;
+						color:$lighter-font-color;
+					}	
+				}
+			}
+			p:last-child{
+				font-size: 14px;
+				color:$lighter-font-color;
+			}
+		}
+	}
+}
+.amap-logo {
+right: 0 !important;
+left: auto !important;
+display: none  !important;
+}
+
+.amap-copyright {
+right: 70px !important;
+left: auto !important;
+display: none  !important;
+}
+.amap-geolocation-con{
+    z-index:40 !important;
+    .amap-geo{
+        border:none;
+        background: url(../../../assets/imgs/icon_positioning@2x.png) 50% 50% no-repeat #fff;
+        background-size:60% 60%;
+        box-shadow:0px 1px 2px #ddd;;
+    }
+}

@@ -1,0 +1,176 @@
+.mint-msgbox-btn{
+  font-size: 16px;
+}
+.order-list{
+  width: 100%;
+  min-height:100%;
+  background-color: #f1f1f1;
+  .page-infinite-loading{
+	background-color: #f1f1f1;
+  }
+  .null {
+    margin: auto;
+    @include font-dpr(15px);
+    text-align: center;
+    padding-top: 6.666667rem;
+  }
+  .cast {
+    background-color: $white;
+    padding: 0 0.32rem;
+    margin: 0 auto 0.32rem;
+    overflow: hidden;
+    //border-bottom:1px solid $border-color;
+    .header {
+      height: 0.906667rem;
+      padding: 0.266667rem 0;
+      border-bottom: 1px solid $background-color;
+    }
+    .content {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid $background-color;
+      overflow: hidden;
+      height: 2.56rem;
+      .imgs {
+        float: left;
+        width: 60%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width: 1.68rem;
+          height: 1.68rem;
+          margin-right: 0.16rem;
+          border-radius: 0.133333rem;
+        }
+      }
+      .info {
+        width: 36%;
+        float: left;
+        text-align: right;
+        p {
+          padding: 0.08rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          img {
+            width: 0.48rem;
+            height: 36px;
+          }
+        }
+        p:first-child {
+          @include font-dpr(14px)
+        }
+        .price {
+          color: $primary-color;
+        }
+      }
+      .right {
+        float: right;
+        width: 4%;
+        height: 100%;
+        padding-top: 0.15rem;
+        display: flex;
+        display: -webkit-flex;
+        @include prefix(justify-content, center);
+        @include prefix(align-items, center);
+        img {
+          width: 0.2rem;
+          height: 0.36rem;
+        }
+      }
+    }
+    .footer {
+      .status {
+        height: 1.386667rem;
+        line-height: 1.386667rem;
+        color: $primary-color;
+        float: left;
+        // display: flex;
+        // display: -webkit-flex;
+        // @include prefix(justify-content,center);
+        // @include prefix(align-items,center);
+        .spot {
+          border-radius: 50%;
+          background-color: $primary-color;
+          width: 0.32rem;
+          height: 0.32rem;
+          margin-right: 0.133333rem;
+          display: inline-block;
+          vertical-align: -2px;
+        }
+        .spot-cancel {
+          background-color: $cancel-color;
+        }
+        .spot-wait {
+          background-color: $orange-color;
+        }
+        .spot-success {
+          background-color: $green-color;
+        }
+      }
+      .cancel {
+        color: $cancel-color;
+      }
+      .wait {
+        color: $orange-color;
+      }
+      .success {
+        color: $green-color;
+      }
+      .actions {
+        float: right;
+        padding: 0.306667rem 0;
+        text-align: right;
+        button {
+          float: left;
+          margin-left: 0.266667rem;
+        }
+        .btn {
+          //display: block;
+          //padding:0.18rem 0.24rem;
+          padding: 0.20rem 0.24rem 0.16rem;
+          @include font-dpr(14px);
+          line-height: 0.373333rem;
+          display: flex;
+          display: -webkit-flex;
+          @include prefix(justify-content, center);
+          @include prefix(align-items, center);
+        }
+        .btn-primary {
+          color: $white;
+          background-color: $primary-color;
+          border: 1px solid $primary-color;
+        }
+        .btn-secondary {
+          color: $grey-color;
+          background-color: $white;
+          border: 1px solid $grey-color;
+        }
+      }
+    }
+
+  }
+  .cast:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-infinite-loading {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+  * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+.mint-spinner-fading-circle {
+  position: relative;
+}
+
+.mint-msgbox-confirm {
+  color: #FF5858;
+}

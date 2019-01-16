@@ -1,0 +1,32 @@
+.search-bar{
+		position:relative;
+		height:100%;
+		@include box-position(center,center);	
+		.search-icon{
+			position:absolute;
+			top:0;
+			left:0;
+			font-size: 16px;
+			width:0.8rem;
+			padding-left:0.15rem;
+			height:100%;
+			@include box-position(center,center);
+		}
+		input{		
+			@include box-position(center,center);			
+			height:100%;
+			width:100%;
+			padding:0 0.8rem;
+			border-radius:50px;
+			background-color:#f0f0f0;
+			border:none;
+		}
+		.has-cancel{
+			width:85%;
+		}
+		.cancel{
+			margin-left:0.533333rem;
+			display: inline-block;
+			color:#333;
+		}
+}

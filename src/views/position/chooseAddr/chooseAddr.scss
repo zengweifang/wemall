@@ -1,0 +1,229 @@
+.choose-addr{
+	position:relative;
+	height:100%;
+	width:100%;
+	overflow:auto;
+	background-color:$white;
+	.thick{
+		div{
+			border-width:2px;
+		}
+	}
+		.hidden{
+			height:0;
+			width:0;
+		}
+		.search{
+			z-index:50;
+			padding:0.16rem 0.32rem 0;
+			height:0.92rem;
+			overflow: hidden;
+			background-color:$white;
+			position: relative;
+		}
+		.active-search{
+			z-index:50;
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			height:0.92rem;
+			padding:0.16rem 0.32rem 0.16rem;
+			margin-bottom: 0.16rem;
+			background-color:$white;
+			margin-top: 0;
+		}
+		.no-start{			
+			background-color: #000;
+			opacity: 0.2;
+		}
+		.result{
+			position:absolute;
+			z-index: 49;
+			padding-top:0.92rem;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			overflow: auto;
+			.error{
+				width:100%;
+				height:100%;
+				background-color:$white;
+				text-align: center;
+				overflow: hidden;
+				img{
+					display: block;
+					width:40%;
+					margin:30% auto 0;
+				}
+				p{
+					margin-top:0.4rem;
+					font-size:14px;
+				}
+				p:last-child{
+					margin-top: 0.2rem;
+					color:$lighter-font-color;
+				}
+			}
+			ul{
+				background-color:$white;
+				opacity: 1;
+				li{
+					padding:0.2rem 0.48rem;
+					font-size:14px;
+					border-bottom: 1px solid $lighter-border-color;
+					line-height: 20px;
+					p:last-child{
+						font-size: 12px;
+						color:$lighter-font-color;
+					}
+				}
+			}
+		}
+	.little-top{
+		padding-top:0.92rem !important;
+	}
+	.content{
+		padding:0.16rem 0.32rem 0;
+		width:100%;
+		height:100%;
+		overflow: auto;
+		padding-top:2rem;
+		position: absolute;
+		top:0;
+
+		.my-address-list{
+			font-size: 14px;
+			margin-top:0.453333rem;
+			.title{
+				color:$lighter-font-color;
+				height:0.746667rem;
+				line-height: 0.746667rem;
+				img{
+					width:0.426667rem;
+					height: 0.426667rem;
+					display: block;
+					margin-right: 0.1rem;
+					margin-top: 0.14rem;
+				}
+			}
+			.list{
+				padding:0 0.48rem;
+				.tip{
+					margin-top: 0.28rem;
+					padding:0.2rem 0;
+					display: block;
+					color:$light-font-color;
+					border-bottom: 1px solid $lighter-border-color;
+					.searching{
+						float:right;
+						div{
+							display: inline-block;
+						}
+					}
+				}				
+				li{
+					border-bottom: 1px solid $lighter-border-color;
+				}
+				.address{
+					font-size: 16px;
+					margin-top: 0.186667rem;
+					@include box-ver-center();
+				}
+				.contact{
+					font-size: 13px;
+					margin-top:12px;
+					margin-bottom:14px;
+					color:$lighter-font-color;
+				}
+				.tag{
+					font-size: 12px;
+					background-color: $primary-color;
+					color:$darker-white;
+					border-radius:2px;
+					width:0.746667rem;
+					padding:0.026667rem 0;
+					margin-left: 0.1rem;
+					display: inline-block;
+					text-align: center;
+				    height: 0.5rem;
+				    overflow: hidden;
+				    top: 0.05rem;
+				    position: relative;				    				
+				}
+				.show-more{
+					font-size: 12px;
+					margin-top:0.26rem;
+				}
+			}		
+		}
+		.login-tip{
+			font-size: 14px;
+			color:$lighter-font-color;
+			margin-top: 0.426667rem;
+			overflow: hidden;
+			height:0.746667rem;
+			line-height: 0.746667rem;
+			img{
+				width:0.426667rem;
+				height: 0.426667rem;
+				display: block;
+				margin-right: 0.1rem;
+				margin-top: 0.14rem;
+			}
+		}
+		.near-place{
+			font-size: 14px;
+			margin-top:0.453333rem;
+			.title{
+				color:$lighter-font-color;
+				i{
+					margin-right: 0.1rem;
+				}
+			}
+			.tip{
+				padding:0.32rem 0;
+			}
+			.near-list{
+				padding:0 0.48rem;
+
+				.current{
+					font-size: 12px;
+					color:$lighter-font-color;
+					margin-top: 0.16rem;
+					.again{
+						font-size: 13px;
+						i{
+							margin-right: 0.1rem;
+							font-size: 16px;
+						}
+						color:$primary-color;
+					}
+				}
+				li{
+					font-size: 16px;
+					padding:0.346667rem 0;
+					border-bottom: 1px solid $lighter-border-color;
+				}
+				.more-address{
+					a{
+						display: inline-block;
+						width:100%;
+					}
+					i{
+						color:$lighter-font-color;
+					}	
+				}
+			}
+		}
+	}
+	.searching{
+		.thick{
+			div{
+				display: inline-block;
+				margin-right: 0.1rem;
+			}
+		}
+	}
+}

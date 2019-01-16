@@ -1,0 +1,522 @@
+.white{
+	background-color:$white !important;
+}
+.product-detail{
+	background-color:$app-background;
+	width:100%;
+	height:100%;
+	.container{
+		height:100%;
+		width:100%;
+		-webkit-overflow-scrolling: touch;
+		.error{
+			width:100%;
+			height:100%;
+			background-color: $white;
+			z-index:10;
+			text-align: center;
+			img{
+				width:4.133333rem;
+				height: 4.133333rem;
+				margin-top: 3rem;
+			}
+			p{
+				font-size:16px;
+				margin-top:0.4rem;
+			}
+
+		}		
+		.section{
+			margin-top: 0.32rem;
+			padding:0 0.266667rem;
+			background-color:$white;
+		}
+		.swiper-area{
+			height:9.426667rem;
+			text-align: center;
+			border-bottom:1px solid $lighter-border-color;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		.info{
+			padding:0.333333rem 0.266667rem 0.266667rem;
+			line-height:24px;
+			background-color:$white;
+			h1{
+				font-size: 16px;
+			}
+			.prickle{
+				color:$light-font-color;
+			}
+			.price{
+				color:$primary-color;
+				font-size: 20px;
+				margin-top:0.266667rem;
+				span{
+					color:$light-font-color;
+					font-size: 12px;
+					text-decoration: line-through;
+				}
+			}
+		}
+		// .coupon{
+		// 	font-size: 13px;
+		// 	height:1.173333rem;
+		// 	line-height:1.173333rem;
+		// 	position:relative;
+		// 	label{
+		// 		margin-right:0.28rem; 
+		// 		display: inline-block;
+		// 		height:100%;
+		// 		vertical-align: top;
+		// 	}
+		// 	.coupon-list{
+		// 		display: inline-block;
+		// 		width:70%;
+		// 		overflow-x: hidden;
+		// 		height:100%;
+		// 		white-space:nowrap;
+		// 	}
+		// 	.icon-more{
+		// 		position:absolute;
+		// 		right:0.16rem;
+		// 		top:0;
+		// 	}
+		// 	span{
+		// 		position:relative;
+		// 		border:1px solid $primary-color;
+		// 		padding:0 0.226667rem;
+		// 		font-size: 12px;
+		// 		line-height: 12px;
+		// 		color:$primary-color;
+		// 		margin: 0 0.08rem;
+
+		// 		i{
+		// 			width:5px;
+		// 			height:5px;
+		// 			display: inline-block;
+		// 			border-radius: 50%;
+		// 			border:1px solid $primary-color;
+		// 			position:absolute;
+		// 			top:0.15rem;
+		// 		}
+		// 		.first{
+		// 			left:0.026667rem;
+		// 		}
+		// 		.last{
+		// 			right:0.026667rem;
+		// 		}
+		// 		em{
+		// 			width:5px;
+		// 			height:5px;
+		// 			position:absolute;
+		// 			background-color:#fff;
+		// 		}
+		// 		em:nth-child(1){
+		// 			top:-1px;
+		// 			left:-1px;
+		// 			border-bottom:1px solid $primary-color;
+		// 			border-radius:0 0 5px 0 ;
+		// 		}
+		// 		em:nth-child(2){
+		// 			bottom:-1px;
+		// 			left:-1px;
+		// 			border-right:1px solid $primary-color;
+		// 			border-radius:0 5px 0 0 ;
+		// 		}
+		// 		em:nth-child(3){
+		// 			top:-1px;
+		// 			right:-1px;
+		// 			border-left:1px solid $primary-color;
+		// 			border-radius:0 0 0 5px ;
+		// 		}
+		// 		em:nth-child(4){
+		// 			bottom:-1px;
+		// 			right:-1px;
+		// 			border-top:1px solid $primary-color;
+		// 			border-radius:5px 0 0 0 ;
+		// 		}												
+		// 	}
+		// }
+		.address{
+			font-size: 13px;
+			overflow: hidden;
+			height:1.013333rem;	
+			line-height:1.013333rem;
+			div{
+				width: 100%;
+				height: 100%;
+			}
+			@include box-ver-center();
+			label{
+				margin-right:0.32rem; 
+				float:left;
+			}	
+			.region{
+				height: 100%;
+	    		display: inline-block;	
+	    		overflow: hidden;
+	    		margin-right: 0.1rem;
+	    		float:left;
+	    		@include box-ver-center();
+				color:$primary-color;
+				i{
+					display: inline-block;
+					overflow: hidden;
+					vertical-align: center;
+				}
+				span{
+					width:4rem;
+					display: inline-block;
+					overflow-x:hidden;
+					white-space:nowrap;
+					text-overflow:ellipsis;	
+					vertical-align: center;
+				}
+
+			}
+			.status{
+				color:$light-font-color;
+				float:right;
+			}
+		}
+		.store{
+			padding-top:12px;
+			padding-bottom:12px;
+			//overflow: hidden;
+			height:70px;
+			.store-info{
+				width:100%;
+				height: 100%;
+			}
+			.icon{
+				width:14%;
+				padding-left:0.08rem;
+				//text-align: center;
+				img{
+					width:44px;
+					height:44px;
+				}
+			}
+			.title{
+				width:60%;
+				padding:0 0.266667rem;
+				h1{
+					font-size:14px;
+					line-height: 16px;
+					color:#323232;
+					overflow: hidden;
+				}
+				p{
+					color:#646464;
+					overflow: hidden;
+					word-break: break-all;
+					text-overflow:ellipsis;
+					-webkit-line-clamp:2;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;	
+					height: 30px;
+					line-height: 15px;
+					margin-top: 0.02rem;
+					@include box-position(center,start);
+				}
+			}
+			.enter-store{
+				width:26%;
+				text-align:right;
+				float:right;
+				
+				div{
+					height:100%;
+					float:right;
+					@include box-ver-center();
+				}
+				.enter{
+					right:0;
+					float:right;
+					width:2.133333rem;
+					height:0.64rem;
+					padding-left:0;
+					padding-right:0;
+				}
+			}
+
+		}
+		.detail{
+			width:100%;
+			height:auto;
+			padding: 0.266667rem;
+			padding-bottom:2.16rem;
+			overflow: hidden;
+			font-size: 14px;
+			line-height:25px;
+			background-color:$white;
+
+			img{
+				width:100% !important;
+			}
+
+			p{
+				margin-bottom:0.266667rem;
+			}
+		}		
+	}
+	.header{
+		background-color: transparent;
+		border:none;
+		z-index:50;
+	}
+	.detail-circle{
+	    width:30px;
+	    height:30px;
+	    background-color: rgba(255,255,255,0.5);
+	    border-radius: 50%;
+	}
+	.header-color{
+		background-color: $white;
+	}
+	.fixed-area{
+		height:2.16rem;
+		overflow: hidden;
+		position: fixed;
+		bottom:0;
+		left:0;
+		width:100%;
+		padding:0;
+		.tips{
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:0.853333rem;
+			@include box-position(center,center);
+			background-color:#ffdbce;
+			color:$primary-color;
+		}
+		.disabled{
+			background-color:#959595;
+			color:#fff;
+		}
+		.fixed-bottons{
+			background-color:$white;
+			width:100%;			
+			height:1.306667rem;
+			position: absolute;
+			bottom:0;
+			left:0;			
+			overflow: hidden;
+			div{
+				
+				i{
+					width:100%;
+					font-size: 18px;
+					line-height: 18px;
+					display: inline-block;
+				}
+				p{
+					width:100%;
+					margin-top: 0.08rem;
+				}
+			}
+			.little{
+				width:18.13%;
+				height:100%;
+				text-align: center;
+				color:#7a7a7a;
+				overflow: hidden;
+				border-top:1px solid #f0f0f0;
+				@include box-position(center,center);
+				div{
+					clear:both;
+				}
+				a{
+					width:100%;
+					height: 100%;
+					display: block;
+					color:#7a7a7a;
+				}
+
+			}
+			.little:first-child{
+				i{
+					padding-top:0.08rem;
+				}
+				p{
+					margin-top: 0;
+				}
+			}
+			.medium{
+				width:31.87%;
+				height:100%;
+				@include box-position(center,center);
+			}
+			.long{
+				width:63.74%;
+				height:100%;
+				@include box-position(center,center);
+			}
+			.parse-long{
+				width:81.87%;
+				height:100%;
+				@include box-position(center,center);				
+			}
+			.call{
+				border-right:1px solid #f0f0f0;
+			}
+			.buy-now{
+				color:$white;
+				font-size: 14px;
+				background-color:$primary-color;
+			}
+			.orange{
+				background-color:#ff8358;
+				font-size:14px;
+				color:$white;
+			}
+			.disabled{
+				color:#333;
+				background-color:#cecece;
+			}			
+		}
+	}
+	.pop-modal{
+		width:100%;
+		.cell{
+			padding:0.6rem 0.32rem;
+			border:none;
+		}
+		.add-amount{
+			width:100%;
+		}
+		.btn{
+			width:100%;
+			padding:0.4rem;
+			border:none;
+			background-color:$primary-color;
+			color:$white;
+			font-size:14px;
+		}
+		.btn-disabled{
+			background-color:#bfbfbf;
+		}
+	}
+	// .coupon-modal{
+	// 	width:100%;
+	// 	max-height: 11.666667rem;
+	// 	.header{
+	// 		border-bottom:1px solid $lighter-border-color;
+	// 	}
+	// 	.content{
+	// 		max-height: 10.52rem;
+	// 		overflow: auto;
+	// 		background-color:$app-background;
+	// 		padding:0.173333rem 0.333333rem 0;			
+	// 	}
+
+	// 	li{
+	// 		border-radius:5px;
+	// 		border-top:0.106667rem solid $coupon-color;
+	// 		background:url('../../../assets/imgs/quan@2x.png') $white no-repeat 0% 5%;
+	// 		background-size:auto 80%;
+	// 		margin-bottom: 0.493333rem;
+	// 		position:relative;
+		
+	// 	}
+	// 	li:last-child{
+	// 		margin-bottom:0.16rem;
+	// 	}
+	// 	.li-disabled{
+	// 		border-top:0.106667rem solid $more-lighter-font-color;
+	// 	}		
+	// 	.main-info{
+	// 		height:1.786667rem;
+	// 		.reduce-price{
+	// 			color:$coupon-color;
+	// 			font-size:32px;
+	// 			@include box-position(center,center);
+	// 			width:34%;
+	// 			height:100%;
+	// 			float:left;
+	// 			border-right:1px dashed $coupon-dashed-color;
+	// 		}
+	// 		.disabled{
+	// 			color:$more-lighter-font-color;
+	// 		}
+	// 		.info-disabled{
+	// 			background:url('../../../assets/imgs/sign_out@2x.png') no-repeat 40% 50%;
+	// 			background-size:auto 80%;
+	// 		}
+	// 		.info{
+	// 			float:right;
+	// 			width:66%;
+
+	// 			h1{
+	// 				color:$coupon-color;
+	// 			}
+	// 			p{
+	// 				height:0.68rem;
+	// 				line-height: 0.68rem;
+	// 				color:#000;
+	// 				button{
+	// 					float:right;
+	// 					height: 100%;
+	// 					width:2.08rem;
+	// 					border:none;
+	// 					background-color:$coupon-color;
+	// 					color:$white;
+	// 					font-size:14px;
+	// 				}
+	// 				.disabled{
+	// 					background-color:$more-lighter-font-color;
+	// 					color:$white;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	.divide{
+	// 		width:100%;
+	// 		height:0.346667rem;
+	// 		position:absolute;
+	// 		top:1.613333rem;
+	// 		left:0;
+	// 		hr{
+	// 			height: 1px;
+	// 			border:none;
+	// 			border-bottom:1px dashed $coupon-dashed-color;
+	// 			margin-top: 0.173333rem;
+	// 		}
+	// 		span{
+	// 			background-color:$app-background;
+	// 			display: inline-block;
+	// 			width:0.173333rem;
+	// 			height:0.346667rem;
+	// 			border-radius:0% 50% 50% 0 ;
+	// 		}
+	// 		span:last-child{
+	// 			border-radius:50% 0% 0% 50% ;	
+	// 			position:absolute;
+	// 			right:0;
+	// 			top:0;
+	// 		}
+	// 	}
+	// 	.time{
+	// 		height:0.72rem;
+	// 		line-height: 0.72rem;
+	// 		//padding-top:0.173333rem;
+	// 		padding-left:0.2rem;
+	// 		white-space: nowrap;
+	// 		color:#5a5a5a;
+	// 	}
+	// }
+	.statusText{
+		text-align: center;
+		height:1rem;
+		line-height:0.8rem;
+	}
+	.drop-button{
+		display: inline-block;
+		position:relative;		
+	}
+}

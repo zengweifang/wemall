@@ -1,0 +1,73 @@
+.user-index{
+	font-size:14px;
+	height:100%;
+	background-color:$app-background;
+	.icon-more{
+		font-size: 24px;
+		display: inline-block;
+	}
+	.logout{
+		width:50px;
+	}
+	.login{
+		height: 2.2rem;
+		line-height: 2.2rem;
+		width:100%;
+		padding:0 0.4rem;
+		border-bottom:1px solid $lighter-border-color;
+		margin-right: 0.4rem;
+		margin-bottom:0.4rem;
+		background-color:#fff;
+		.img{
+			width:1.4rem;
+			height: 1.4rem;
+			border-radius:50%;
+			margin:0.4rem 0.4rem 0.4rem 0;
+			background-color: #f0f0f0;
+
+			img{
+				border-radius:50%;
+				width:100%;
+				height:100%;
+			}
+		}
+		span{
+			display:inline-block;
+			max-width:6rem;
+		}
+	}
+	.function,.other{
+		background-color:#fff;
+		margin-bottom: 0.4rem;
+		li{
+			height: 1.266667rem;
+			line-height: 1.266667rem;
+			border-bottom:1px solid $lighter-border-color;
+			padding:0 0.4rem;
+			overflow: hidden;
+			
+			a{
+				overflow: hidden;
+				width:100%;
+				height: 100%;
+				display: inline-block;
+			}
+			span{
+				margin-left: 0.4rem;
+				display: inline-block;
+			}
+			img{
+				width:16px;
+			}
+
+			.icon-more{
+				padding-top: 1px;
+				line-height: 1.2rem;				
+			}
+
+			.text{
+				color:#646464;
+			}
+		}
+	}
+}

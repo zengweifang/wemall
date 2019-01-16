@@ -1,0 +1,125 @@
+.product-list{
+	padding-top:44px;
+	height:100%;
+	background-color:$app-background;
+	overflow:auto;
+	width:100%;
+	-webkit-overflow-scrolling: touch;
+	.search-header{
+		height:44px;
+		position:fixed;
+		top:0;
+		left:0;
+		padding:0 0.32rem;
+		background-color:#fff;
+		width:100%;
+		border-bottom:1px solid $lighter-border-color;
+		z-index:50;
+		button{
+			border:none;
+			background:none;
+			height: 44px;
+			width:8%;
+			line-height: 44px;
+			text-align: left;
+			float:left;
+		}
+		.title{
+			width:92%;
+			background-color:#f0f0f0;
+			height:26px;
+			line-height: 26px;
+			margin:9px 0 9px;
+			font-size: 12px;
+			float:right;
+			border-radius:20px; 
+			color:#959595;
+			i{
+				color:#000;
+				margin:0 0.2rem 0 0.28rem;
+			}
+		}
+	}
+	.good-sort{
+		height:45px;
+		width:100%;
+		margin-bottom:0.05rem;
+		position:fixed;
+		top:44px;
+		left:0;
+		z-index:50;
+		ul{
+			width:100%;
+			height: 100%;
+		}
+		li{
+			width:25%;
+			float:left;
+			border-bottom:1px solid #dcdcdc;
+			background-color:#fff;
+			height: 100%;
+			text-align: center;
+			line-height: 1.2rem;
+			@include font-dpr(14px);
+			position:relative;
+			.has-right{
+				margin-right:14px;
+			}
+			i{
+				font-size: 10px;
+				line-height: 10px;
+				position:absolute;
+				left:50%;
+				margin-left:14px;
+				color:$lighter-font-color;
+			}
+			.active-i{
+				color:$primary-color;
+			}
+			.icon-shangsanjiao{
+				bottom:47%;
+				// margin-top: -0.3rem;
+			}
+			.icon-xiasanjiao{
+				top:48%;
+				// margin-top: 0.1rem;
+			}
+			
+			
+		}
+		.active{
+			color:$primary-color;
+			border-bottom:2px solid $primary-color;
+		}
+	}
+	.good-area{
+		padding:0 0.2rem;
+		.load-text{
+			padding:0.4rem;
+			text-align:center;
+			font-size:14px;
+			line-height: 14px;
+			color:$lighter-font-color;
+
+			div{
+				display: inline-block;
+				border-width:3px;
+				margin-right: 5px;
+			}
+		}
+	}
+	.drop-button{
+		display: inline-block;
+		position:relative;
+
+		.drop-btn{
+			width:30px;
+		}
+	}
+}
+.has-sort{
+	padding-top:89px;
+}
+.all-height{
+	height:100%;
+}
